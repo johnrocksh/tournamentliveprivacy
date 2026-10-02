@@ -1,71 +1,1016 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Privacy Policy</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
-      line-height: 1.6;
-      color: #222;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    h1, h2 {
-      color: #111;
-    }
-  </style>
+    <title>Tournament Live — Политика конфиденциальности</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                         Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.65;
+            color: #222;
+            background: #f5f5f7;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px 60px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+        }
+
+        header {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #e5e5e5;
+            padding-bottom: 25px;
+        }
+
+        h1 {
+            margin: 0 0 8px;
+            font-size: 32px;
+            line-height: 1.2;
+        }
+
+        h2 {
+            margin-top: 36px;
+            margin-bottom: 12px;
+            font-size: 22px;
+        }
+
+        h3 {
+            margin-top: 24px;
+            font-size: 18px;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        ul {
+            padding-left: 24px;
+        }
+
+        li {
+            margin: 6px 0;
+        }
+
+        .date {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .language-switcher {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 25px;
+        }
+
+        .language-switcher button {
+            border: 1px solid #ccc;
+            background: #fff;
+            border-radius: 8px;
+            padding: 8px 16px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .language-switcher button.active {
+            background: #222;
+            color: #fff;
+            border-color: #222;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .contact {
+            background: #f5f5f7;
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        footer {
+            margin-top: 35px;
+            padding-top: 20px;
+            border-top: 1px solid #e5e5e5;
+            color: #777;
+            font-size: 14px;
+        }
+
+        [lang-content] {
+            display: none;
+        }
+
+        [lang-content].active {
+            display: block;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px 12px 40px;
+            }
+
+            .card {
+                padding: 24px 20px;
+                border-radius: 12px;
+            }
+
+            h1 {
+                font-size: 27px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-<h1>Privacy Policy</h1>
+<div class="container">
+    <div class="card">
 
-<p>Last updated: May 20, 2026</p>
+        <div class="language-switcher">
+            <button id="ruButton" class="active" onclick="setLanguage('ru')">
+                Русский
+            </button>
 
-<p>
-Tournament Live respects your privacy.
-This application does not sell personal data to third parties.
-</p>
+            <button id="enButton" onclick="setLanguage('en')">
+                English
+            </button>
+        </div>
 
-<h2>Information We Access</h2>
 
-<p>
-The application may access:
-</p>
+        <!-- ========================= -->
+        <!-- RUSSIAN VERSION -->
+        <!-- ========================= -->
 
-<ul>
-  <li>Camera — for live video streaming</li>
-  <li>Microphone — for audio streaming</li>
-  <li>Network connection — to transmit live stream data</li>
-</ul>
+        <div id="ru" lang-content class="active" lang="ru">
 
-<h2>Data Collection</h2>
+            <header>
+                <h1>Политика конфиденциальности</h1>
+                <div class="date">
+                    Tournament Live<br>
+                    Последнее обновление: октябрь 2026 года
+                </div>
+            </header>
 
-<p>
-The application does not collect or store personal user information on external servers.
-Streaming data is transmitted only to the streaming server configured by the user.
-</p>
 
-<h2>Third-Party Services</h2>
+            <h2>1. Введение</h2>
 
-<p>
-The application may use third-party streaming or analytics services required for app functionality.
-</p>
+            <p>
+                Tournament Live («Tournament Live», «мы», «нас» или
+                «приложение») — мобильное приложение для проведения и
+                прямой трансляции спортивных мероприятий, включая турниры
+                по каратэ.
+            </p>
 
-<h2>Security</h2>
+            <p>
+                Настоящая Политика конфиденциальности объясняет, какие
+                данные обрабатываются приложением, для каких целей они
+                используются, куда передаются и как хранятся.
+            </p>
 
-<p>
-We take reasonable measures to protect the stability and security of the application.
-</p>
+            <p>
+                Мы стремимся обрабатывать только те данные, которые
+                необходимы для работы функций приложения.
+            </p>
 
-<h2>Contact</h2>
 
-<p>
-If you have questions about this Privacy Policy, you can contact the developer.
-</p>
+            <h2>2. Какие данные обрабатывает приложение</h2>
+
+            <h3>Камера</h3>
+
+            <p>
+                Tournament Live использует камеру устройства для захвата
+                видеопотока во время прямой трансляции.
+            </p>
+
+            <p>
+                Видео с камеры обрабатывается приложением на устройстве и
+                передаётся в режиме реального времени на RTMP-адрес,
+                указанный для конкретной трансляции.
+            </p>
+
+            <p>
+                Tournament Live не сохраняет видеозаписи камеры на
+                собственных серверах.
+            </p>
+
+
+            <h3>Микрофон</h3>
+
+            <p>
+                Tournament Live использует микрофон устройства для захвата
+                звука во время прямой трансляции.
+            </p>
+
+            <p>
+                Аудиоданные передаются в режиме реального времени вместе
+                с видеопотоком на настроенный RTMP-адрес.
+            </p>
+
+            <p>
+                Tournament Live не сохраняет аудиозаписи с микрофона
+                на собственных серверах.
+            </p>
+
+
+            <h3>Идентификатор установки</h3>
+
+            <p>
+                При первом запуске приложение создаёт случайный уникальный
+                идентификатор установки (UUID v4).
+            </p>
+
+            <p>Этот идентификатор:</p>
+
+            <ul>
+                <li>создаётся приложением случайным образом;</li>
+                <li>хранится локально на устройстве;</li>
+                <li>не создаётся на основе IDFA;</li>
+                <li>не создаётся на основе аппаратного идентификатора устройства;</li>
+                <li>не используется для отслеживания пользователя между различными приложениями;</li>
+                <li>
+                    может передаваться на сервер Tournament Live вместе
+                    с запросами конфигурации, чтобы сервер мог различать
+                    отдельные установки приложения.
+                </li>
+            </ul>
+
+            <p>
+                Идентификатор установки не используется для установления
+                личности пользователя.
+            </p>
+
+            <p>
+                При удалении приложения локально сохранённый идентификатор
+                установки удаляется вместе с данными приложения.
+            </p>
+
+
+            <h3>Информация об устройстве</h3>
+
+            <p>
+                Приложение может локально получать техническую информацию,
+                необходимую для работы и настройки трансляции, включая:
+            </p>
+
+            <ul>
+                <li>модель устройства;</li>
+                <li>версию операционной системы;</li>
+                <li>версию приложения;</li>
+                <li>доступные технические возможности устройства.</li>
+            </ul>
+
+            <p>
+                Эта информация используется приложением локально для выбора
+                подходящих параметров работы и качества трансляции.
+            </p>
+
+            <p>
+                Если такая информация не требуется серверу для конкретной
+                функции, она не передаётся на сервер Tournament Live.
+            </p>
+
+
+            <h3>Информация о сетевом подключении</h3>
+
+            <p>
+                Приложение может определить тип сетевого подключения
+                устройства, например Wi-Fi или мобильную сеть.
+            </p>
+
+            <p>
+                Эта информация используется локально для адаптации
+                параметров трансляции и не используется для отслеживания
+                местоположения пользователя.
+            </p>
+
+
+            <h2>3. Для чего используются данные</h2>
+
+            <p>Обрабатываемые приложением данные используются для следующих целей:</p>
+
+            <ul>
+                <li>захват и передача видео и аудио во время прямой трансляции;</li>
+                <li>получение конфигурации турнира после сканирования QR-кода или ввода PIN-кода;</li>
+                <li>идентификация конкретной установки приложения при запросах конфигурации;</li>
+                <li>настройка параметров трансляции с учётом возможностей устройства и сетевого подключения;</li>
+                <li>обеспечение стабильной работы функций приложения.</li>
+            </ul>
+
+            <p>
+                Мы не используем данные приложения для поведенческой рекламы
+                или отслеживания пользователя между приложениями и
+                веб-сайтами.
+            </p>
+
+
+            <h2>4. Передача данных</h2>
+
+            <h3>Передача видеопотока и аудиопотока</h3>
+
+            <p>
+                Во время прямой трансляции видео и аудио передаются в режиме
+                реального времени на RTMP-сервер, указанный для трансляции.
+            </p>
+
+            <p>
+                В зависимости от настроек трансляции таким сервером может
+                быть сторонняя платформа потокового вещания, например VK,
+                YouTube или другой совместимый RTMP-сервис.
+            </p>
+
+            <p>
+                После передачи на соответствующий RTMP-сервер дальнейшая
+                обработка, хранение и публикация потока регулируются
+                политикой конфиденциальности и условиями соответствующего
+                сервиса.
+            </p>
+
+            <p>
+                Tournament Live не использует видеопоток или аудиопоток
+                для рекламы, аналитического профилирования или отслеживания
+                пользователей.
+            </p>
+
+
+            <h3>Передача идентификатора установки</h3>
+
+            <p>
+                UUID установки может передаваться на сервер Tournament Live
+                вместе с запросами конфигурации.
+            </p>
+
+            <p>
+                Этот идентификатор используется для технического распознавания
+                конкретной установки приложения и не предназначен для
+                установления личности пользователя.
+            </p>
+
+
+            <h3>Третьи лица</h3>
+
+            <p>
+                Мы не продаём и не предоставляем персональные данные
+                пользователей третьим лицам в рекламных целях.
+            </p>
+
+            <p>
+                Приложение не содержит сторонних рекламных SDK или
+                сторонних SDK аналитики.
+            </p>
+
+            <p>
+                Если пользователь самостоятельно указывает сторонний
+                RTMP-сервис для трансляции, поток передаётся этому сервису
+                исключительно для выполнения функции прямой трансляции.
+            </p>
+
+
+            <h2>5. Аналитика и отслеживание</h2>
+
+            <p>Tournament Live не использует:</p>
+
+            <ul>
+                <li>рекламный идентификатор IDFA для отслеживания;</li>
+                <li>сторонние рекламные SDK;</li>
+                <li>сторонние аналитические SDK;</li>
+                <li>технологии межсайтового или межприложенческого отслеживания;</li>
+                <li>контакты пользователя;</li>
+                <li>данные о местоположении пользователя.</li>
+            </ul>
+
+            <p>
+                Приложение также не создаёт пользовательский профиль
+                для рекламных или маркетинговых целей.
+            </p>
+
+
+            <h2>6. Хранение данных</h2>
+
+            <p>
+                Видео и аудио с камеры и микрофона не сохраняются на
+                серверах Tournament Live.
+            </p>
+
+            <p>
+                Они передаются в режиме реального времени на RTMP-сервер,
+                указанный для трансляции.
+            </p>
+
+            <p>
+                Локальные настройки приложения и идентификатор установки
+                хранятся на устройстве.
+            </p>
+
+            <p>
+                Срок хранения идентификатора установки связан с периодом
+                существования локальных данных приложения. При удалении
+                приложения локальные данные, включая идентификатор установки,
+                удаляются из хранилища приложения.
+            </p>
+
+            <p>
+                Если сторонняя платформа, используемая пользователем для
+                трансляции, сохраняет видеозапись или другие данные
+                трансляции, срок и условия такого хранения определяются
+                соответствующей платформой.
+            </p>
+
+
+            <h2>7. QR-коды и PIN-коды турниров</h2>
+
+            <p>
+                Tournament Live может использовать QR-код или PIN-код для
+                получения конфигурации конкретного турнира.
+            </p>
+
+            <p>
+                QR-код или PIN-код используются для идентификации и загрузки
+                соответствующей конфигурации турнира.
+            </p>
+
+            <p>
+                Приложение не использует QR-код или PIN-код для рекламного
+                отслеживания пользователя.
+            </p>
+
+
+            <h2>8. Разрешения устройства</h2>
+
+            <p>
+                Для работы основных функций приложения могут запрашиваться
+                следующие разрешения:
+            </p>
+
+            <p>
+                <strong>Камера</strong> — для захвата видео во время
+                прямой трансляции.
+            </p>
+
+            <p>
+                <strong>Микрофон</strong> — для захвата аудио во время
+                прямой трансляции.
+            </p>
+
+            <p>
+                Без соответствующего разрешения камеры или микрофона
+                соответствующая функция приложения может быть недоступна.
+            </p>
+
+
+            <h2>9. Права пользователя</h2>
+
+            <p>Пользователь может:</p>
+
+            <ul>
+                <li>отказаться от предоставления разрешения на использование камеры или микрофона;</li>
+                <li>изменить предоставленные разрешения в настройках устройства;</li>
+                <li>удалить приложение вместе с его локальными данными;</li>
+                <li>обратиться к нам с вопросами относительно обработки данных.</li>
+            </ul>
+
+            <p>
+                Поскольку идентификатор установки не связан с учётной
+                записью пользователя и не предназначен для идентификации
+                личности, мы не используем его для установления личности
+                пользователя.
+            </p>
+
+
+            <h2>10. Конфиденциальность детей</h2>
+
+            <p>
+                Tournament Live не предназначено специально для детей
+                младше 13 лет.
+            </p>
+
+            <p>
+                Мы не стремимся сознательно собирать персональные данные
+                детей младше 13 лет.
+            </p>
+
+            <p>
+                Если вы считаете, что ребёнок предоставил нам персональные
+                данные, пожалуйста, свяжитесь с нами по указанным ниже
+                контактным данным.
+            </p>
+
+
+            <h2>11. Безопасность</h2>
+
+            <p>
+                Мы применяем разумные технические и организационные меры
+                для защиты данных, обрабатываемых приложением.
+            </p>
+
+            <p>
+                При этом ни один способ передачи или хранения данных через
+                Интернет не может гарантировать абсолютную безопасность.
+            </p>
+
+
+            <h2>12. Изменения настоящей Политики конфиденциальности</h2>
+
+            <p>
+                Мы можем периодически обновлять настоящую Политику
+                конфиденциальности.
+            </p>
+
+            <p>
+                При внесении изменений мы обновляем дату последнего
+                изменения, указанную в верхней части этой страницы.
+            </p>
+
+
+            <h2>13. Контакты</h2>
+
+            <div class="contact">
+                <p>
+                    <strong>Email:</strong>
+                    <a href="mailto:sringaci@netinfo.md">
+                        sringaci@netinfo.md
+                    </a>
+                </p>
+
+                <p>
+                    <strong>Поддержка:</strong>
+                    <a href="https://tournament.expert/en/contacts/">
+                        tournament.expert/en/contacts/
+                    </a>
+                </p>
+
+                <p>
+                    <strong>Телефон:</strong>
+                    +373 22 213-659
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- ========================= -->
+        <!-- ENGLISH VERSION -->
+        <!-- ========================= -->
+
+        <div id="en" lang-content lang="en">
+
+            <header>
+                <h1>Privacy Policy</h1>
+                <div class="date">
+                    Tournament Live<br>
+                    Last updated: October 2026
+                </div>
+            </header>
+
+
+            <h2>1. Introduction</h2>
+
+            <p>
+                Tournament Live ("Tournament Live", "we", "us", or
+                "the app") is a mobile application for conducting and
+                live-streaming sporting events, including karate tournaments.
+            </p>
+
+            <p>
+                This Privacy Policy explains what data is processed by
+                the application, why it is used, where it is transmitted,
+                and how it is stored.
+            </p>
+
+            <p>
+                We aim to process only the data necessary to provide
+                the application's functionality.
+            </p>
+
+
+            <h2>2. Data Processed by the Application</h2>
+
+            <h3>Camera</h3>
+
+            <p>
+                Tournament Live uses the device camera to capture video
+                during a live stream.
+            </p>
+
+            <p>
+                Camera video is processed by the application on the device
+                and transmitted in real time to the RTMP address configured
+                for the particular stream.
+            </p>
+
+            <p>
+                Tournament Live does not store camera recordings on its
+                own servers.
+            </p>
+
+
+            <h3>Microphone</h3>
+
+            <p>
+                Tournament Live uses the device microphone to capture audio
+                during a live stream.
+            </p>
+
+            <p>
+                Audio data is transmitted in real time together with the
+                video stream to the configured RTMP address.
+            </p>
+
+            <p>
+                Tournament Live does not store microphone recordings on
+                its own servers.
+            </p>
+
+
+            <h3>Installation Identifier</h3>
+
+            <p>
+                When the application is launched for the first time,
+                it generates a random unique installation identifier
+                (UUID v4).
+            </p>
+
+            <p>This identifier:</p>
+
+            <ul>
+                <li>is randomly generated by the application;</li>
+                <li>is stored locally on the device;</li>
+                <li>is not generated from IDFA;</li>
+                <li>is not generated from a hardware device identifier;</li>
+                <li>is not used to track the user across different applications;</li>
+                <li>
+                    may be transmitted to the Tournament Live server
+                    together with configuration requests so that the
+                    server can distinguish individual application installations.
+                </li>
+            </ul>
+
+            <p>
+                The installation identifier is not used to establish
+                the identity of the user.
+            </p>
+
+            <p>
+                When the application is deleted, the locally stored
+                installation identifier is deleted together with the
+                application's local data.
+            </p>
+
+
+            <h3>Device Information</h3>
+
+            <p>
+                The application may locally access technical information
+                required for operation and stream configuration, including:
+            </p>
+
+            <ul>
+                <li>device model;</li>
+                <li>operating system version;</li>
+                <li>application version;</li>
+                <li>available device capabilities.</li>
+            </ul>
+
+            <p>
+                This information is used locally by the application to
+                select appropriate operating and streaming parameters.
+            </p>
+
+            <p>
+                If this information is not required by the server for
+                a particular function, it is not transmitted to the
+                Tournament Live server.
+            </p>
+
+
+            <h3>Network Connection Information</h3>
+
+            <p>
+                The application may determine the type of network connection,
+                such as Wi-Fi or mobile network.
+            </p>
+
+            <p>
+                This information is used locally to adapt streaming
+                parameters and is not used to track the user's location.
+            </p>
+
+
+            <h2>3. How Data Is Used</h2>
+
+            <p>The data processed by the application is used for:</p>
+
+            <ul>
+                <li>capturing and transmitting video and audio during live streams;</li>
+                <li>retrieving tournament configuration after scanning a QR code or entering a PIN;</li>
+                <li>identifying a specific application installation when requesting configuration;</li>
+                <li>adjusting streaming parameters based on device capabilities and network conditions;</li>
+                <li>providing and maintaining the application's functionality.</li>
+            </ul>
+
+            <p>
+                We do not use application data for behavioral advertising
+                or for tracking users across applications or websites.
+            </p>
+
+
+            <h2>4. Data Sharing and Transmission</h2>
+
+            <h3>Video and Audio Transmission</h3>
+
+            <p>
+                During a live stream, video and audio are transmitted in
+                real time to the RTMP server configured for the stream.
+            </p>
+
+            <p>
+                Depending on the stream configuration, this server may be
+                a third-party streaming platform such as VK, YouTube, or
+                another compatible RTMP service.
+            </p>
+
+            <p>
+                Once transmitted to the applicable RTMP server, further
+                processing, storage, and publication of the stream are
+                governed by the privacy policy and terms of the applicable
+                service.
+            </p>
+
+            <p>
+                Tournament Live does not use video or audio streams for
+                advertising, analytical profiling, or user tracking.
+            </p>
+
+
+            <h3>Installation Identifier</h3>
+
+            <p>
+                The installation UUID may be transmitted to the Tournament
+                Live server together with configuration requests.
+            </p>
+
+            <p>
+                This identifier is used for the technical recognition of
+                a specific application installation and is not intended
+                to establish the user's identity.
+            </p>
+
+
+            <h3>Third Parties</h3>
+
+            <p>
+                We do not sell or provide users' personal data to third
+                parties for advertising purposes.
+            </p>
+
+            <p>
+                The application does not contain third-party advertising
+                SDKs or third-party analytics SDKs.
+            </p>
+
+            <p>
+                If the user independently specifies a third-party RTMP
+                service for streaming, the stream is transmitted to that
+                service solely to provide the live-streaming functionality.
+            </p>
+
+
+            <h2>5. Analytics and Tracking</h2>
+
+            <p>Tournament Live does not use:</p>
+
+            <ul>
+                <li>the IDFA advertising identifier for tracking;</li>
+                <li>third-party advertising SDKs;</li>
+                <li>third-party analytics SDKs;</li>
+                <li>cross-site or cross-app tracking technologies;</li>
+                <li>user contacts;</li>
+                <li>user location data.</li>
+            </ul>
+
+            <p>
+                The application does not create user profiles for
+                advertising or marketing purposes.
+            </p>
+
+
+            <h2>6. Data Storage</h2>
+
+            <p>
+                Video and audio captured by the camera and microphone are
+                not stored on Tournament Live servers.
+            </p>
+
+            <p>
+                They are transmitted in real time to the RTMP server
+                configured for the stream.
+            </p>
+
+            <p>
+                Local application settings and the installation identifier
+                are stored on the user's device.
+            </p>
+
+            <p>
+                The installation identifier is retained for as long as
+                the application's local data exists. When the application
+                is deleted, local application data, including the
+                installation identifier, is deleted from the application's
+                storage.
+            </p>
+
+            <p>
+                If a third-party platform used by the user stores a recording
+                or other streaming data, the retention period and storage
+                practices are governed by that platform.
+            </p>
+
+
+            <h2>7. Tournament QR Codes and PINs</h2>
+
+            <p>
+                Tournament Live may use a QR code or PIN to retrieve
+                configuration for a specific tournament.
+            </p>
+
+            <p>
+                The QR code or PIN is used to identify and load the
+                corresponding tournament configuration.
+            </p>
+
+            <p>
+                The application does not use QR codes or PINs for
+                advertising or user tracking.
+            </p>
+
+
+            <h2>8. Device Permissions</h2>
+
+            <p>
+                The application may request the following permissions
+                to provide its core functionality:
+            </p>
+
+            <p>
+                <strong>Camera</strong> — to capture video during
+                live streaming.
+            </p>
+
+            <p>
+                <strong>Microphone</strong> — to capture audio during
+                live streaming.
+            </p>
+
+            <p>
+                Without the appropriate camera or microphone permission,
+                the corresponding application functionality may not
+                be available.
+            </p>
+
+
+            <h2>9. User Rights</h2>
+
+            <p>Users may:</p>
+
+            <ul>
+                <li>deny permission to use the camera or microphone;</li>
+                <li>change granted permissions in the device settings;</li>
+                <li>delete the application together with its local data;</li>
+                <li>contact us with questions regarding data processing.</li>
+            </ul>
+
+            <p>
+                Because the installation identifier is not linked to a
+                user account and is not intended to identify an individual,
+                we do not use it to establish the user's identity.
+            </p>
+
+
+            <h2>10. Children's Privacy</h2>
+
+            <p>
+                Tournament Live is not specifically directed at children
+                under the age of 13.
+            </p>
+
+            <p>
+                We do not knowingly seek to collect personal information
+                from children under 13.
+            </p>
+
+            <p>
+                If you believe that a child has provided us with personal
+                information, please contact us using the contact details
+                below.
+            </p>
+
+
+            <h2>11. Security</h2>
+
+            <p>
+                We use reasonable technical and organizational measures
+                to protect data processed by the application.
+            </p>
+
+            <p>
+                However, no method of transmitting or storing information
+                over the Internet can guarantee absolute security.
+            </p>
+
+
+            <h2>12. Changes to This Privacy Policy</h2>
+
+            <p>
+                We may periodically update this Privacy Policy.
+            </p>
+
+            <p>
+                When changes are made, we will update the last-updated
+                date displayed at the top of this page.
+            </p>
+
+
+            <h2>13. Contact Us</h2>
+
+            <div class="contact">
+                <p>
+                    <strong>Email:</strong>
+                    <a href="mailto:sringaci@netinfo.md">
+                        sringaci@netinfo.md
+                    </a>
+                </p>
+
+                <p>
+                    <strong>Support:</strong>
+                    <a href="https://tournament.expert/en/contacts/">
+                        tournament.expert/en/contacts/
+                    </a>
+                </p>
+
+                <p>
+                    <strong>Phone:</strong>
+                    +373 22 213-659
+                </p>
+            </div>
+
+        </div>
+
+
+        <footer>
+            Tournament Live
+        </footer>
+
+    </div>
+</div>
+
+
+<script>
+    function setLanguage(language) {
+        document.querySelectorAll('[lang-content]').forEach(function (element) {
+            element.classList.remove('active');
+        });
+
+        document.getElementById(language).classList.add('active');
+
+        document.getElementById('ruButton').classList.remove('active');
+        document.getElementById('enButton').classList.remove('active');
+
+        if (language === 'ru') {
+            document.getElementById('ruButton').classList.add('active');
+            document.documentElement.lang = 'ru';
+            document.title = 'Tournament Live — Политика конфиденциальности';
+        } else {
+            document.getElementById('enButton').classList.add('active');
+            document.documentElement.lang = 'en';
+            document.title = 'Tournament Live — Privacy Policy';
+        }
+    }
+</script>
 
 </body>
 </html>
